@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathing Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Breathe In... Breathe Out</h1>
+
+        <!-- Timer Display -->
+        <div id="timer">00:00</div>
+
+        <!-- Environment Selector -->
+        <div class="environment-selector">
+            <button class="env-btn" data-environment="forest">Forest</button>
+            <button class="env-btn" data-environment="rain">Rain</button>
+            <button class="env-btn" data-environment="clouds">Clouds</button>
+        </div>
+
+        <!-- Audio Controls -->
+        <div class="audio-controls">
+            <label for="env-audio">Environment Volume:</label>
+            <input type="range" id="env-audio" min="0" max="100" value="50">
+
+            <label for="meditation-audio">Meditation Volume:</label>
+            <input type="range" id="meditation-audio" min="0" max="100" value="50">
+        </div>
+
+        <!-- Start/Stop Button -->
+        <button id="start-stop-btn">Start Breathing Exercise</button>
+    </div>
+
+    <audio id="env-sound" loop></audio>
+    <audio id="meditation-sound" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
